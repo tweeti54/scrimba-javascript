@@ -40,3 +40,48 @@ console.log(example1);
 console.log(example2);
 console.log(example3);
 console.log(example4);
+
+
+
+
+//////////////////////////////////////////////////////////////////
+
+let example5 = true;
+console.log(Boolean(example5));
+
+let example6 = [5,7,6];
+// example6.push(8);
+// console.log(example6);
+
+// example6.push([8,9,10]);
+// console.log(example6);
+
+example6.push(8,9,10);
+console.log(example6);
+
+example6.pop();
+console.log(example6);
+
+example6[0] = 1;
+console.log(example6);
+
+example6.forEach(function(e){
+    console.log(e);
+});
+
+example6.forEach((element) => {
+    console.log(element);
+});
+
+////////////////////////////////////////////////////////////////////
+
+let exam1 = ['Dylan', 5, true];
+let exam2 = exam1;
+// let exam2 = [...exam1];
+// let exam2 = exam1.map((element) => {
+//     return element;
+// });
+exam2.push(11);
+
+console.log(exam1);
+console.log(exam2);

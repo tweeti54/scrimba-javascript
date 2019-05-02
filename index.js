@@ -85,3 +85,154 @@ exam2.push(11);
 
 console.log(exam1);
 console.log(exam2);
+
+// Objects ////////////////////////////////////////////////////////////////////
+
+let person1 = {
+    firstName:'Sunmi',
+    lastName:'Chang',
+    address: {
+        city: 'Austin',
+        state:'Texas'
+    },
+    age: 30,
+    cats: ['Milo', 'Tito','Achieles']
+};
+
+// console.log(person1.firstName);
+console.log(person1.age);
+person1.age = 31;
+console.log(person1.address.city);
+console.log(person1.age);
+console.log(Object.keys(person1));
+console.log(Object.values(person1));
+console.log(person1.hasOwnProperty('firstName'));
+console.log(person1.hasOwnProperty('firstName2'));
+
+//////////////////////////////////////////////////////////////////////////////
+
+let person2 = {
+    firstName: 'Sunmi'
+}
+
+let person3 = Object.assign({}, person2);
+
+// let person3 = person2;
+
+person3.lastName = 'Chang';
+
+console.log(person2);
+console.log(person3);
+
+// math Operators ///////////////////////////////////////////////////////
+
+console.log( 5%5);
+console.log( 5%2);
+
+console.log(typeof 10);
+console.log(typeof '10');
+
+console.log(10 == '10');
+console.log(10 === '10');
+
+let exam3 = 13;
+// exam3 %= 3;
+exam3 ++ // exam3 = exam3 + 1
+console.log(exam3);
+exam3 -- 
+console.log(exam3);
+exam3 += 5;
+console.log(exam3);
+exam3 -= 5;
+console.log(exam3);
+exam3 /= 5;
+console.log(exam3);
+
+// If, Else If, Else, And & Or /////////////////////////////////////////////
+
+console.log(10 === 10 && 5 < 4); //and
+console.log(10 === 10 || 5 < 4); //or
+console.log((5 >= 5 || 4 < 4) && 3 + 2 === 5);
+
+let exam4 = 5;
+
+if (exam4 === 6 || false === true){
+    console.log('Runs');
+} else if( false ) {
+    console.log('else if');
+} else {
+    console.log('else');
+}
+
+//Switch //////////////////////////////////////////////////////////////////
+
+let studentAnswer = 'A';
+
+switch(studentAnswer){
+    case 'A':
+    console.log('A is wrong.');
+    break;
+    case 'B':
+    console.log('B is wrong.');
+    break;
+    case 'C':
+    console.log('C is correct.');
+    break;
+    default:
+    console.log('Not a real answer.');
+}
+
+
+studentAnswer = 'B';
+
+switch(studentAnswer){
+    case 'A':
+    console.log('A is wrong.');
+    break;
+    case 'B':
+    console.log('B is wrong.');
+    break;
+    case 'C':
+    console.log('C is correct.');
+    break;
+    default:
+    console.log('Not a real answer.');
+}
+
+
+studentAnswer = 'C';
+
+switch(studentAnswer){
+    case 'A':
+    console.log('A is wrong.');
+    break;
+    case 'B':
+    console.log('B is wrong.');
+    break;
+    case 'C':
+    console.log('C is correct.');
+    break;
+    default:
+    console.log('Not a real answer.');
+}
+
+
+studentAnswer = 'D';
+
+switch(studentAnswer){
+    case 'A':
+    console.log('A is wrong.');
+    break;
+    case 'B':
+    console.log('B is wrong.');
+    break;
+    case 'C':
+    console.log('C is correct.');
+    break;
+    default:
+    console.log('Not a real answer.');
+}
+
+
+
+

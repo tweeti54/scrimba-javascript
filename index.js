@@ -233,6 +233,44 @@ switch(studentAnswer){
     console.log('Not a real answer.');
 }
 
+// For Loop ///////////////////////////////////////////////////
 
+let total = 0;
 
+// for (let i = 0; i <5; i++){
+//     total += i;
+// }
+// console.log(total);
 
+///////////////////
+
+let numArray = [10,20,30,40,50,60,70,80];
+
+for (let i = 0; i <numArray.length; i++){
+    total += numArray[i];
+}
+console.log(total);
+
+// While Loop ////////////////////////////////////////////////////
+
+let count = 0;
+
+while (true) {
+    count++;
+
+    if(count >= 20) {
+        break;
+    }
+}
+
+console.log(count);
+
+// Function ////////////////////////////////////////////////////
+
+function add(num1, num2){
+    return num1 + num2;
+}
+
+console.log(add(10, 6));
+console.log(add(25, 7));
+console.log(add(20, 2));
